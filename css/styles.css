@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #707070;
+  background: linear-gradient(90deg, #030008, #00131a);
+  overflow-y: hidden;
+}
+
+.logo {
+  width: 8rem;
+  top: 1.5rem;
+  left: 5rem;
+  position: absolute;
+}
+
+.container {
+  margin: 1.5rem auto;
+  max-width: 700px;
+  max-height: 100vh;
+  background-color: white;
+}
+
+/* Useful Classes */
+.xy-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.transition {
+  transition: all 350ms ease-in-out;
+}
+
+.r-3-2 {
+  width: 100%;
+  padding-bottom: 66.667%;
+  background-color: #ddd;
+}
+
+.image-holder {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Main Styles */
+.gallery-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery {
+  position: relative;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.item-wrapper {
+  cursor: pointer;
+  width: 23%; /* arbitrary value */
+  display: inline-block;
+  background-color: #000000;
+}
+
+.gallery-item {
+  opacity: 0.4;
+}
+.gallery-item.active {
+  opacity: 1;
+}
+
+.controls {
+  font-size: 0;
+  border-top: none;
+}
+.move-btn {
+  display: inline-block;
+  width: 50%;
+  font-size: 1.2rem;
+  height: 2rem;
+  border: none;
+  color: #fff;
+  background-color: #000;
+  padding: 0.2em 1.5em;
+}
+.move-btn:first-child {
+  border-right: none;
+}
+.move-btn.left {
+  cursor: w-resize;
+}
+.move-btn.right {
+  cursor: e-resize;
+}
+
+@media (max-width: 414px) {
+}
