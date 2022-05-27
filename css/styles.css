@@ -116,12 +116,12 @@ body {
 @media (max-width: 414px) {
   .logo {
     top: 1.3rem;
-    left: 10rem;
+    left: 9.5rem;
   }
 
   .h3 {
     top: 4rem;
-    left: 9rem;
+    left: 8.5rem;
     font-weight: 400;
   }
 
