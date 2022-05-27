@@ -106,10 +106,10 @@ body {
 @media (max-width: 414px) {
   .logo {
     top: 1.3rem;
-    left: 4.5rem;
+    left: 8rem;
   }
 
   .container {
-    margin: 8rem auto;
+    margin: 12rem auto;
   }
 } ;
