@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  background: linear-gradient(90deg, rgb(12, 2, 26), #1e0224, #031844);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin: 1.3rem 0;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  line-height: 20vmin;
+}
+
+.gradient-text {
+  color: transparent;
+  background: conic-gradient(
+    #d9d7f1 12%,
+    #baabda 12%,
+    #007fff 33%,
+    #e7fbbe 33%,
+    #e7fbbe 55%,
+    #ffcbcb 55%,
+    #ffcbcb 70%,
+    #41b883 70%,
+    #00131a 87%,
+    #f7d1ba 87%
+  );
+  background-size: 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  animation: expand-rev 0.5s ease forwards;
+
+  cursor: pointer;
+}
+
+.gradient-text:hover {
+  animation: expand 0.5s ease forwards;
+}
+
+@keyframes expand {
+  0% {
+    background-size: 50%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 55%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 325%;
+    background-position: -10em -4em;
+  }
+}
+
+@keyframes expand-rev {
+  0% {
+    background-size: 325%;
+    background-position: -10em -4em;
+  }
+  20% {
+    background-size: 55%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 50%;
+    background-position: 0 0;
+  }
+}
+
+.logo {
+  width: 8rem;
+  top: 9rem;
+  left: 47%;
+  position: absolute;
+  visibility: hidden;
+}
+
+.busca {
+  display: flex;
+  width: 300px;
+  margin-top: 5rem;
+  visibility: hidden;
+}
+
+.busca #searchInput {
+  flex: 1;
+  padding: 10px;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.busca #searchInput:focus {
+  box-shadow: inset 1px 4px 7px rgba(0, 0, 0, 0.5);
+}
+
+.busca button {
+  padding: 10px;
+  font-size: 15px;
+  border: 0;
+  background-color: #0066cc;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.busca button:hover {
+  background-color: #007fff;
+}
+
+.resultado {
+  width: 300px;
+  display: none;
+  border: 1px dotted #fff;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+  width: 100%;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+}
+.info .temp {
+  flex: 1;
+  text-align: center;
+}
+.info .vento {
+  flex: 1;
+  text-align: center;
+}
+
+.tempTitulo,
+.ventoTitulo {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.tempInfo,
+.ventoInfo {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+.tempInfo sup {
+  font-size: 15px;
+  font-weight: normal;
+}
+.ventoInfo span {
+  font-size: 15px;
+  font-weight: normal;
+}
+.ventoArea {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 20px;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+.ventoPonto {
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  transform-origin: left;
+}
+
+.aviso {
+  color: #fff;
+  padding-top: 30px;
+  font-weight: 550;
+}
+
+@media (max-width: 414px) {
+  h1 {
+    margin: 1.3rem 0;
+    margin-top: 5rem;
+    margin-left: 3.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .logo {
+    left: 41.5%;
+  }
+} ;
