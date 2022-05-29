@@ -94,16 +94,22 @@ rightBtn.addEventListener("mouseleave", stopMovement);
 //Start this baby up
 (function init() {
   var images = [
-    "./img/ee.png",
-    "https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/city.jpg",
-    "https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/deer.jpg",
-    "https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/flowers.jpg",
-    "https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/food.jpg",
-    "https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/guy.jpg",
-    "https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/landscape.jpg",
-    "https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/lips.jpg",
-    "https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/night.jpg",
-    "https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/table.jpg",
+    "./img/1.jpeg",
+    "./img/2.jpeg",
+    "./img/3.jpeg",
+    "./img/4.jpeg",
+    "./img/5.jpeg",
+    "./img/6.jpeg",
+    "./img/7.jpeg",
+    "./img/8.jpeg",
+    "./img/9.jpeg",
+    "./img/10.jpeg",
+    "./img/11.jpeg",
+    "./img/12.jpeg",
+    "./img/13.jpeg",
+    "./img/14.jpeg",
+    "./img/15.jpeg",
+    "./img/16.jpeg",
   ];
 
   //Set Initial Featured Image
